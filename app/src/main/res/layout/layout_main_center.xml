@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.lee.bookstore.view.NoScrollViewPager
+        android:id="@+id/vp_center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_book"
+        android:weightSum="4" >
+
+        <RadioButton
+            android:id="@+id/rb_book"
+            style="@style/Style_RadioButton"
+            android:drawableTop="@drawable/selector_radiobtn_book"
+            android:text="@string/bookStroe" />
+        <RadioButton
+            android:id="@+id/rb_map"
+            style="@style/Style_RadioButton"
+            android:drawableTop="@drawable/selector_radiobtn_map"
+            android:text="@string/nearby" />
+        <RadioButton
+            android:id="@+id/rb_service"
+            style="@style/Style_RadioButton"
+            android:drawableTop="@drawable/selector_radiobtn_collect"
+            android:text="@string/collect" />
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/Style_RadioButton"
+            android:drawableTop="@drawable/selector_radiobtn_listener"
+            android:text="@string/listener" />
+
+    </RadioGroup>
+</LinearLayout>

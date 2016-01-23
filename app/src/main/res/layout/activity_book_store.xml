@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/iv_stroe_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@drawable/selector_iv_back"/>
+        <TextView
+            android:id="@+id/tv_store_name"
+            style="@style/Style_large_text"
+            android:layout_centerInParent="true"
+            android:text="商城名字"/>
+        <ImageView
+            android:id="@+id/iv_share"
+            android:src="@drawable/selector_common"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_reload"
+            android:src="@drawable/selector_refresh"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_share"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:progressDrawable="@drawable/style_pro_green"
+        android:id="@+id/pb_book"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/wv_book"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcv_book"/>
+        <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/back_top"
+            android:layout_margin="15dp"
+            android:id="@+id/fab_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <include
+            layout="@layout/layout_error"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flt_book_loading"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </FrameLayout>
+</FrameLayout>

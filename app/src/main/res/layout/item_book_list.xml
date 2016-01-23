@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:add="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        add:cardBackgroundColor="@color/list_background"
+        add:cardCornerRadius="5dp">
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_item_book_bg">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/iv_book"
+                    android:scaleType="centerInside"
+                    android:transitionName="tran_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp" />
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/tv_book_title"
+                       style="@style/Style_normal_text"
+                       android:textSize="18sp"
+                       android:text="@string/BookTitle"/>
+
+                    <TextView
+                        android:id="@+id/tv_book_details"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="3"
+                        style="@style/Style_small_text"
+                        android:text="@string/BookIntroduce"
+                        android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_blue"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <cn.lee.bookstore.view.FlowLayout
+                android:id="@+id/llt_book_lable"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingRight="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tv_book_reads"
+                    style="@style/Style_small_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reading"/>
+                <ImageView
+                    android:id="@+id/iv_heart"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/munion_bottombar_fav_normal"/>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

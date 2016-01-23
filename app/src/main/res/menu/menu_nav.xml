@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:checked="true"
+            android:icon="@drawable/selector_radiobtn_book"
+            android:title="首页"/>
+        <item
+
+            android:icon="@drawable/ic_home_bt2_n"
+            android:title="反馈"/>
+        <item
+            android:icon="@drawable/ic_home_bt3_n"
+            android:title="设置"/>
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_home_bt4_n"
+            android:title="退出"/>
+
+    </group>
+</menu>

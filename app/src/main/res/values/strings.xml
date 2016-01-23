@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">书林</string>
+
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="lookBookDetail">查看更多...</string>
+    <string name="BookIntroduce">图书介绍</string>
+    <string name="BookTitle">图书标题</string>
+    <string name="reading">阅读人数</string>
+    <string name="MyCollect">我的收藏</string>
+    <string name="bookStroe">书城</string>
+    <string name="collect">收藏</string>
+    <string name="nearby">附近</string>
+    <string name="listener">听书</string>
+    <string name="nearby_stroe">附近书店</string>
+    <string name="stores">附近书店</string>
+    <string name="listener_book">听书</string>
+
+
+</resources>
